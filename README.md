@@ -18,4 +18,30 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 
 3、配置`header/library searcher path`
 
+在项目`Build Settings`中搜索`header search`，添加如下配置：
 
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/header.png)
+
+搜索`library search`，添加如下配置：
+
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/library.png)
+
+4、在项目中导入需要的库文件，如下图示：
+
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/linked.png)
+
+### 配置glad
+
+> OpenGL只是一个标准/规范，具体的实现是有驱动开发商针对特定显卡实现的。由于OpenGL驱动版本众多，它大多数函数的位置都无法在编译时确定下来，需要在运行时查询。开发者需要在运行时获取函数地址并将其保存在一个函数指针中供以后使用。而取得地址的方法非常复杂、繁琐。glad库是目前最新、最流行的简化此过程的库。
+
+1、打开glad的[在线服务](http://glad.dav1d.de/)
+
+2、将语言设置为C/C++，在API选项中，选择3.3以上的OpenGL版本（我的电脑选择的是4.1版本，3.3及更新的版本也能正常工作）
+
+3、将模式（Profile）设置为Core，保证生成加载器（Generate a loader）选项是选中的。
+
+4、先暂时忽略拓展（Extensions）中内容。点击生成（Generate）
+
+5、下载生成的zip包（包含`glad.c`、`glad,h`和`khrplatform.h`），解压添加到项目中。
+
+## 至此Mac配置基本完成
