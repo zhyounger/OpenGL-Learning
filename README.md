@@ -13,7 +13,7 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 2、配置路径
 
 在`/usr/local/Cellar/glfw`路径下找到`header`和`lib`对应路径，在`Xcode->Preferences->Localtion->Custom Paths`设置路径。
-![image](https://github.com/Orient-ZY/OpenGL-Learning/tree/master/img/localtion.png)
+![image](https://github.com/Orient-ZY/OpenGL-Learning/tree/master/img/Localtion.png)
 
 3、配置`header/library searcher path`
 
