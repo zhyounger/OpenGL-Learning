@@ -1,8 +1,8 @@
 > This is a OpenGL-Learning repository, I'm learning OpenGL from "https://learnopengl-cn.github.io", and I will put my code here .
 
-## Learning OpenGL on Xcode
+# Learning OpenGL on Xcode
 
-### 安装glfw
+## 安装glfw
 
 > glfw是一个OpenGL的应用框架，支持Linux和Windows。glfw主要用来处理特定操作系统下的特定任务，例如OpenGL窗口管理、分辨率切换、键盘、鼠标以及游戏手柄、定时器输入、线程创建等。
 
@@ -30,7 +30,7 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 
 ![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/linked.png)
 
-### 配置glad
+## 配置glad
 
 > OpenGL只是一个标准/规范，具体的实现是有驱动开发商针对特定显卡实现的。由于OpenGL驱动版本众多，它大多数函数的位置都无法在编译时确定下来，需要在运行时查询。开发者需要在运行时获取函数地址并将其保存在一个函数指针中供以后使用。而取得地址的方法非常复杂、繁琐。glad库是目前最新、最流行的简化此过程的库。
 
@@ -44,4 +44,28 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 
 5、下载生成的zip包（包含`glad.c`、`glad,h`和`khrplatform.h`），解压添加到项目中。
 
-## 至此Mac配置基本完成
+# 至此Mac配置基本完成
+
+# Learning OpenGL on Visual Studio 2017
+
+## 配置OpenGL
+
+1、新建Win32 控制台应用程序，勾选空项目。
+
+2、在菜单：项目->管理NuGet程序包 中搜索`nupengl`安装`nupengl.core`
+
+## 配置glad库
+
+1、在glad[在线服务](http://glad.dav1d.de/)中配置glad，方法同Xcode。
+
+2、将生成的zip文件下载解压。将其中的`include`与`src`文件夹复制到项目目录中，并将三个文件拖入项目中
+
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/    master/img/ScreenShot.jpg)
+
+3、在项目->属性->VC++目录中，添加包含目录和源目录
+
+
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/    master/img/win-include.jpg)
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/    master/img/win-src.jpg)
+
+# 至此Visual Studio配置基本完成
