@@ -60,12 +60,13 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 
 2、将生成的zip文件下载解压。将其中的`include`与`src`文件夹复制到项目目录中，并将三个文件拖入项目中
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/    master/img/ScreenShot.jpg)
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/ScreenShot.jpg)
+
 
 3、在项目->属性->VC++目录中，添加包含目录和源目录
 
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/    master/img/win-include.jpg)
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/    master/img/win-src.jpg)
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/win-include.jpg)
+![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/win-src.jpg)
 
 # 至此Visual Studio配置基本完成
