@@ -1,3 +1,5 @@
+> 本代码不包含必要的头文件，如果需要，请在 `OpenGL-Learning` -> `Example`中下载
+
 ## 着色器(shaders)
 
 > 结构(structure)
