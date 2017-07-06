@@ -1,4 +1,4 @@
-> 本代码不包含必要的头文件，如果需要，请在 `OpenGL-Learning` -> `Example`中下载
+> 本代码运行在Xcode中，不包含必要的头文件，如果需要，请在 `OpenGL-Learning` -> `Example`中下载
 
 # 这是一个自定义的Shader类
 
