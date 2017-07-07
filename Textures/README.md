@@ -1,10 +1,13 @@
 # 纹理
 
-** 在这份代码中我使用了下面这张纹理图片： **
+在这份代码中我使用了下面这张纹理图片：
+
+
 ![texture](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/Textures/src/wall.jpg)
 
 ## 纹理坐标：
-![tex_coords](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/imgtex_coords.png)
+
+![texture_coords](https://learnopengl-cn.github.io/img/01/06/tex_coords.png)
 
 从上图中可以看出，纹理的坐标远点是从图片的左下方开始。绘制矩形/三角形时对应的纹理坐标如下：
 
@@ -26,7 +29,8 @@ float vertices[] = {	// 渲染三角形形所需代码
 	 0.0f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 1.0f		// 渲染三角形所需代码
 };		// 渲染三角形所需代码
 ```
-** 矩形的绘制是通过绘制两个三角形得到，我们只需给出4个顶点属性和一个索引数组即可绘制出矩形 **
+矩形的绘制是通过绘制两个三角形得到，我们只需给出4个顶点属性和一个索引数组即可绘制出矩形
+
 ## 接下来绑定VAO,VBO,EBO：
 
 ```
@@ -62,7 +66,7 @@ glEnableVertexAttribArray(2);
 
 ## 纹理设置
 
-** 首先创建一个纹理ID并绑定 **
+首先创建一个纹理ID并绑定
 
 ```
 unsigned int texture;
@@ -70,7 +74,7 @@ glGenTextures(1, &texture);
 glBindTexture(GL_TEXTURE_2D, texture);
 ```
 
-** 设置环绕、过滤方式 **
+设置环绕、过滤方式
 
 ```
 // set the texture wrapping parameters
@@ -81,7 +85,7 @@ glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 ```
 
-** 生成并加载纹理 **
+生成并加载纹理
 
 ```
 int width, height, nrChannels;
