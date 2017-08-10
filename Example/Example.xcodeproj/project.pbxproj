@@ -11,6 +11,8 @@
 		F82B9F831F0A1FDC00175E64 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = F82B9F821F0A1FDC00175E64 /* glad.c */; };
 		F82B9F861F0A201500175E64 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B9F851F0A201500175E64 /* OpenGL.framework */; };
 		F82B9F881F0A205500175E64 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B9F871F0A205500175E64 /* libglfw.3.2.dylib */; };
+		F8697CB51F3C4DF300995837 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8697CB41F3C4DF300995837 /* stb_image.cpp */; };
+		F8697CB81F3C4E0300995837 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F8697CB71F3C4E0300995837 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,15 @@
 		F82B9F821F0A1FDC00175E64 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		F82B9F851F0A201500175E64 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F82B9F871F0A205500175E64 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		F8697CB01F3C4B4700995837 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		F8697CB11F3C4BF700995837 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		F8697CB21F3C4C4B00995837 /* coordinate.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = coordinate.vs; sourceTree = "<group>"; };
+		F8697CB31F3C4C5600995837 /* coordinate.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = coordinate.fs; sourceTree = "<group>"; };
+		F8697CB41F3C4DF300995837 /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		F8697CB61F3C4DFA00995837 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		F8697CB71F3C4E0300995837 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8697CB91F3C514200995837 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		F8697CBA1F3C514200995837 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,8 @@
 		F82B9F6B1F0A1FA300175E64 = {
 			isa = PBXGroup;
 			children = (
+				F8697CB71F3C4E0300995837 /* README.md */,
+				F8697CB01F3C4B4700995837 /* glm */,
 				F82B9F7F1F0A1FC800175E64 /* src */,
 				F82B9F7E1F0A1FBD00175E64 /* Include */,
 				F82B9F761F0A1FA300175E64 /* Example */,
@@ -78,6 +91,8 @@
 		F82B9F7E1F0A1FBD00175E64 /* Include */ = {
 			isa = PBXGroup;
 			children = (
+				F8697CB61F3C4DFA00995837 /* stb_image.h */,
+				F8697CB11F3C4BF700995837 /* shader.h */,
 				F82B9F801F0A1FD600175E64 /* glad.h */,
 				F82B9F811F0A1FD600175E64 /* khrplatform.h */,
 			);
@@ -87,7 +102,12 @@
 		F82B9F7F1F0A1FC800175E64 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F8697CB91F3C514200995837 /* face.png */,
+				F8697CBA1F3C514200995837 /* wall.jpg */,
+				F8697CB41F3C4DF300995837 /* stb_image.cpp */,
 				F82B9F821F0A1FDC00175E64 /* glad.c */,
+				F8697CB21F3C4C4B00995837 /* coordinate.vs */,
+				F8697CB31F3C4C5600995837 /* coordinate.fs */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -159,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8697CB51F3C4DF300995837 /* stb_image.cpp in Sources */,
 				F82B9F781F0A1FA300175E64 /* main.cpp in Sources */,
+				F8697CB81F3C4E0300995837 /* README.md in Sources */,
 				F82B9F831F0A1FDC00175E64 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JP69ENXV8L;
-				HEADER_SEARCH_PATHS = "$(glfw_header)";
+				HEADER_SEARCH_PATHS = (
+					"$(glfw_header)",
+					"$(SRCROOT)",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(glfw_lib)",
 					/usr/local/Cellar/glfw/3.2.1/lib,
@@ -273,7 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = JP69ENXV8L;
-				HEADER_SEARCH_PATHS = "$(glfw_header)";
+				HEADER_SEARCH_PATHS = (
+					"$(glfw_header)",
+					"$(SRCROOT)",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(glfw_lib)",
 					/usr/local/Cellar/glfw/3.2.1/lib,
@@ -301,6 +329,7 @@
 				F82B9F7D1F0A1FA300175E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
