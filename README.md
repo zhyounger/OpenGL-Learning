@@ -14,21 +14,21 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 
 在`/usr/local/Cellar/glfw`路径下找到`header`和`lib`对应路径，在`Xcode->Preferences->Localtion->Custom Paths`设置路径。
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/Localtion.png)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/localtion.png)
 
 3、配置`header/library searcher path`
 
 在项目`Build Settings`中搜索`header search`，添加如下配置：
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/header.png)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/header.png)
 
 搜索`library search`，添加如下配置：
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/library.png)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/library.png)
 
 4、在项目中导入需要的库文件，如下图示：
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/linked.png)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/linked.png)
 
 ## 配置glad
 
@@ -60,13 +60,13 @@ glfw将会被安装在`/usr/local/Cellar/glfw`
 
 2、将生成的zip文件下载解压。将其中的`include`与`src`文件夹复制到项目目录中，并将三个文件拖入项目中
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/ScreenShot.jpg)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/ScreenShot.jpg)
 
 
 3、在项目->属性->VC++目录中，添加包含目录和源目录
 
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/win-include.jpg)
-![image](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/win-src.jpg)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/win-include.jpg)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/win-src.jpg)
 
 # 至此Visual Studio配置基本完成

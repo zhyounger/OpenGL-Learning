@@ -50,7 +50,7 @@ ourShader.setInt("texture2", 1); // 或使用着色器类设置
 ```
 
 最终结果如下图：
-![image](https://github.com/Orient-ZY/OpenGL-Learning/raw/master/img/texture_unit1.png)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/texture_unit1.png)
 
 因为OpenGL要求y轴0.0坐标是在图片的底部的，但是图片的y轴0.0坐标通常在顶部，所以纹理上下颠倒了，我们只需要在加载任何图像之前加入以下语句：
 
@@ -60,4 +60,4 @@ stbi_set_flip_vertically_on_load(true);
 
 结果如下图：
 
-![image](https://github.com/Orient-ZY/OpenGL-Learning/raw/master/img/texture_unit2.png)
+![image](http://git.oschina.net/orient01/OpenGL-img/raw/master/texture_unit2.png)

@@ -164,5 +164,5 @@ while (!glfwWindowShouldClose(window))
 ```
 
 你可以在[这里](https://github.com/Orient-ZY/OpenGL-Learning/tree/master/Textures)找到源码，最后渲染出的三角形与矩形（只需要将注释中三角形与矩形的代码互换即可）效果如下：
-![triangle_texture](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/triangleTexture.png)
-![rectangle_texture](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/img/rectangleTexture.png)
+![triangle_texture](http://git.oschina.net/orient01/OpenGL-img/raw/master/triangleTexture.png)
+![rectangle_texture](http://git.oschina.net/orient01/OpenGL-img/raw/master/rectangleTexture.png)
