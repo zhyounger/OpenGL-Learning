@@ -71,6 +71,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Code\OpenGL\OpenGL-Learning\camera-vs\camera-vs\Include;$(IncludePath)</IncludePath>
+    <SourcePath>D:\Code\OpenGL\OpenGL-Learning\camera-vs\camera-vs\Src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -146,8 +148,286 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="Include\glm\detail\func_common.inl" />
+    <None Include="Include\glm\detail\func_exponential.inl" />
+    <None Include="Include\glm\detail\func_geometric.inl" />
+    <None Include="Include\glm\detail\func_integer.inl" />
+    <None Include="Include\glm\detail\func_matrix.inl" />
+    <None Include="Include\glm\detail\func_noise.inl" />
+    <None Include="Include\glm\detail\func_packing.inl" />
+    <None Include="Include\glm\detail\func_trigonometric.inl" />
+    <None Include="Include\glm\detail\func_vector_relational.inl" />
+    <None Include="Include\glm\detail\intrinsic_common.inl" />
+    <None Include="Include\glm\detail\intrinsic_exponential.inl" />
+    <None Include="Include\glm\detail\intrinsic_geometric.inl" />
+    <None Include="Include\glm\detail\intrinsic_integer.inl" />
+    <None Include="Include\glm\detail\intrinsic_matrix.inl" />
+    <None Include="Include\glm\detail\intrinsic_trigonometric.inl" />
+    <None Include="Include\glm\detail\intrinsic_vector_relational.inl" />
+    <None Include="Include\glm\detail\precision.inl" />
+    <None Include="Include\glm\detail\type_gentype.inl" />
+    <None Include="Include\glm\detail\type_half.inl" />
+    <None Include="Include\glm\detail\type_mat.inl" />
+    <None Include="Include\glm\detail\type_mat2x2.inl" />
+    <None Include="Include\glm\detail\type_mat2x3.inl" />
+    <None Include="Include\glm\detail\type_mat2x4.inl" />
+    <None Include="Include\glm\detail\type_mat3x2.inl" />
+    <None Include="Include\glm\detail\type_mat3x3.inl" />
+    <None Include="Include\glm\detail\type_mat3x4.inl" />
+    <None Include="Include\glm\detail\type_mat4x2.inl" />
+    <None Include="Include\glm\detail\type_mat4x3.inl" />
+    <None Include="Include\glm\detail\type_mat4x4.inl" />
+    <None Include="Include\glm\detail\type_vec.inl" />
+    <None Include="Include\glm\detail\type_vec1.inl" />
+    <None Include="Include\glm\detail\type_vec2.inl" />
+    <None Include="Include\glm\detail\type_vec3.inl" />
+    <None Include="Include\glm\detail\type_vec4.inl" />
+    <None Include="Include\glm\gtc\constants.inl" />
+    <None Include="Include\glm\gtc\epsilon.inl" />
+    <None Include="Include\glm\gtc\matrix_access.inl" />
+    <None Include="Include\glm\gtc\matrix_inverse.inl" />
+    <None Include="Include\glm\gtc\matrix_transform.inl" />
+    <None Include="Include\glm\gtc\noise.inl" />
+    <None Include="Include\glm\gtc\packing.inl" />
+    <None Include="Include\glm\gtc\quaternion.inl" />
+    <None Include="Include\glm\gtc\random.inl" />
+    <None Include="Include\glm\gtc\reciprocal.inl" />
+    <None Include="Include\glm\gtc\type_precision.inl" />
+    <None Include="Include\glm\gtc\type_ptr.inl" />
+    <None Include="Include\glm\gtc\ulp.inl" />
+    <None Include="Include\glm\gtx\associated_min_max.inl" />
+    <None Include="Include\glm\gtx\bit.inl" />
+    <None Include="Include\glm\gtx\closest_point.inl" />
+    <None Include="Include\glm\gtx\color_space.inl" />
+    <None Include="Include\glm\gtx\color_space_YCoCg.inl" />
+    <None Include="Include\glm\gtx\compatibility.inl" />
+    <None Include="Include\glm\gtx\component_wise.inl" />
+    <None Include="Include\glm\gtx\dual_quaternion.inl" />
+    <None Include="Include\glm\gtx\euler_angles.inl" />
+    <None Include="Include\glm\gtx\extend.inl" />
+    <None Include="Include\glm\gtx\extented_min_max.inl" />
+    <None Include="Include\glm\gtx\fast_exponential.inl" />
+    <None Include="Include\glm\gtx\fast_square_root.inl" />
+    <None Include="Include\glm\gtx\fast_trigonometry.inl" />
+    <None Include="Include\glm\gtx\gradient_paint.inl" />
+    <None Include="Include\glm\gtx\handed_coordinate_space.inl" />
+    <None Include="Include\glm\gtx\inertia.inl" />
+    <None Include="Include\glm\gtx\integer.inl" />
+    <None Include="Include\glm\gtx\intersect.inl" />
+    <None Include="Include\glm\gtx\int_10_10_10_2.inl" />
+    <None Include="Include\glm\gtx\io.inl" />
+    <None Include="Include\glm\gtx\log_base.inl" />
+    <None Include="Include\glm\gtx\matrix_cross_product.inl" />
+    <None Include="Include\glm\gtx\matrix_interpolation.inl" />
+    <None Include="Include\glm\gtx\matrix_major_storage.inl" />
+    <None Include="Include\glm\gtx\matrix_operation.inl" />
+    <None Include="Include\glm\gtx\matrix_query.inl" />
+    <None Include="Include\glm\gtx\matrix_transform_2d.inl" />
+    <None Include="Include\glm\gtx\mixed_product.inl" />
+    <None Include="Include\glm\gtx\multiple.inl" />
+    <None Include="Include\glm\gtx\norm.inl" />
+    <None Include="Include\glm\gtx\normal.inl" />
+    <None Include="Include\glm\gtx\normalize_dot.inl" />
+    <None Include="Include\glm\gtx\number_precision.inl" />
+    <None Include="Include\glm\gtx\optimum_pow.inl" />
+    <None Include="Include\glm\gtx\orthonormalize.inl" />
+    <None Include="Include\glm\gtx\perpendicular.inl" />
+    <None Include="Include\glm\gtx\polar_coordinates.inl" />
+    <None Include="Include\glm\gtx\projection.inl" />
+    <None Include="Include\glm\gtx\quaternion.inl" />
+    <None Include="Include\glm\gtx\raw_data.inl" />
+    <None Include="Include\glm\gtx\rotate_normalized_axis.inl" />
+    <None Include="Include\glm\gtx\rotate_vector.inl" />
+    <None Include="Include\glm\gtx\scalar_relational.inl" />
+    <None Include="Include\glm\gtx\simd_mat4.inl" />
+    <None Include="Include\glm\gtx\simd_quat.inl" />
+    <None Include="Include\glm\gtx\simd_vec4.inl" />
+    <None Include="Include\glm\gtx\spline.inl" />
+    <None Include="Include\glm\gtx\std_based_type.inl" />
+    <None Include="Include\glm\gtx\string_cast.inl" />
+    <None Include="Include\glm\gtx\transform.inl" />
+    <None Include="Include\glm\gtx\transform2.inl" />
+    <None Include="Include\glm\gtx\unsigned_int.inl" />
+    <None Include="Include\glm\gtx\vec1.inl" />
+    <None Include="Include\glm\gtx\vector_angle.inl" />
+    <None Include="Include\glm\gtx\vector_query.inl" />
+    <None Include="Include\glm\gtx\wrap.inl" />
+    <None Include="packages.config" />
+    <None Include="Res\coordinate.fs" />
+    <None Include="Res\coordinate.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Include\glm\detail\glm.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Src\glad.c" />
+    <ClCompile Include="Src\stb_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\face.png" />
+    <Image Include="Res\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\camera.h" />
+    <ClInclude Include="Include\glad\glad.h" />
+    <ClInclude Include="Include\glm\common.hpp" />
+    <ClInclude Include="Include\glm\detail\func_common.hpp" />
+    <ClInclude Include="Include\glm\detail\func_exponential.hpp" />
+    <ClInclude Include="Include\glm\detail\func_geometric.hpp" />
+    <ClInclude Include="Include\glm\detail\func_integer.hpp" />
+    <ClInclude Include="Include\glm\detail\func_matrix.hpp" />
+    <ClInclude Include="Include\glm\detail\func_noise.hpp" />
+    <ClInclude Include="Include\glm\detail\func_packing.hpp" />
+    <ClInclude Include="Include\glm\detail\func_trigonometric.hpp" />
+    <ClInclude Include="Include\glm\detail\func_vector_relational.hpp" />
+    <ClInclude Include="Include\glm\detail\hint.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_common.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_exponential.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_geometric.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_integer.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_matrix.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_trigonometric.hpp" />
+    <ClInclude Include="Include\glm\detail\intrinsic_vector_relational.hpp" />
+    <ClInclude Include="Include\glm\detail\precision.hpp" />
+    <ClInclude Include="Include\glm\detail\setup.hpp" />
+    <ClInclude Include="Include\glm\detail\type_float.hpp" />
+    <ClInclude Include="Include\glm\detail\type_gentype.hpp" />
+    <ClInclude Include="Include\glm\detail\type_half.hpp" />
+    <ClInclude Include="Include\glm\detail\type_int.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat2x2.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat2x3.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat2x4.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat3x2.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat3x3.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat3x4.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat4x2.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat4x3.hpp" />
+    <ClInclude Include="Include\glm\detail\type_mat4x4.hpp" />
+    <ClInclude Include="Include\glm\detail\type_vec.hpp" />
+    <ClInclude Include="Include\glm\detail\type_vec1.hpp" />
+    <ClInclude Include="Include\glm\detail\type_vec2.hpp" />
+    <ClInclude Include="Include\glm\detail\type_vec3.hpp" />
+    <ClInclude Include="Include\glm\detail\type_vec4.hpp" />
+    <ClInclude Include="Include\glm\detail\_features.hpp" />
+    <ClInclude Include="Include\glm\detail\_fixes.hpp" />
+    <ClInclude Include="Include\glm\detail\_literals.hpp" />
+    <ClInclude Include="Include\glm\detail\_noise.hpp" />
+    <ClInclude Include="Include\glm\detail\_swizzle.hpp" />
+    <ClInclude Include="Include\glm\detail\_swizzle_func.hpp" />
+    <ClInclude Include="Include\glm\detail\_vectorize.hpp" />
+    <ClInclude Include="Include\glm\exponential.hpp" />
+    <ClInclude Include="Include\glm\ext.hpp" />
+    <ClInclude Include="Include\glm\fwd.hpp" />
+    <ClInclude Include="Include\glm\geometric.hpp" />
+    <ClInclude Include="Include\glm\glm.hpp" />
+    <ClInclude Include="Include\glm\gtc\constants.hpp" />
+    <ClInclude Include="Include\glm\gtc\epsilon.hpp" />
+    <ClInclude Include="Include\glm\gtc\matrix_access.hpp" />
+    <ClInclude Include="Include\glm\gtc\matrix_integer.hpp" />
+    <ClInclude Include="Include\glm\gtc\matrix_inverse.hpp" />
+    <ClInclude Include="Include\glm\gtc\matrix_transform.hpp" />
+    <ClInclude Include="Include\glm\gtc\noise.hpp" />
+    <ClInclude Include="Include\glm\gtc\packing.hpp" />
+    <ClInclude Include="Include\glm\gtc\quaternion.hpp" />
+    <ClInclude Include="Include\glm\gtc\random.hpp" />
+    <ClInclude Include="Include\glm\gtc\reciprocal.hpp" />
+    <ClInclude Include="Include\glm\gtc\type_precision.hpp" />
+    <ClInclude Include="Include\glm\gtc\type_ptr.hpp" />
+    <ClInclude Include="Include\glm\gtc\ulp.hpp" />
+    <ClInclude Include="Include\glm\gtx\associated_min_max.hpp" />
+    <ClInclude Include="Include\glm\gtx\bit.hpp" />
+    <ClInclude Include="Include\glm\gtx\closest_point.hpp" />
+    <ClInclude Include="Include\glm\gtx\color_space.hpp" />
+    <ClInclude Include="Include\glm\gtx\color_space_YCoCg.hpp" />
+    <ClInclude Include="Include\glm\gtx\compatibility.hpp" />
+    <ClInclude Include="Include\glm\gtx\component_wise.hpp" />
+    <ClInclude Include="Include\glm\gtx\constants.hpp" />
+    <ClInclude Include="Include\glm\gtx\dual_quaternion.hpp" />
+    <ClInclude Include="Include\glm\gtx\epsilon.hpp" />
+    <ClInclude Include="Include\glm\gtx\euler_angles.hpp" />
+    <ClInclude Include="Include\glm\gtx\extend.hpp" />
+    <ClInclude Include="Include\glm\gtx\extented_min_max.hpp" />
+    <ClInclude Include="Include\glm\gtx\fast_exponential.hpp" />
+    <ClInclude Include="Include\glm\gtx\fast_square_root.hpp" />
+    <ClInclude Include="Include\glm\gtx\fast_trigonometry.hpp" />
+    <ClInclude Include="Include\glm\gtx\gradient_paint.hpp" />
+    <ClInclude Include="Include\glm\gtx\handed_coordinate_space.hpp" />
+    <ClInclude Include="Include\glm\gtx\inertia.hpp" />
+    <ClInclude Include="Include\glm\gtx\integer.hpp" />
+    <ClInclude Include="Include\glm\gtx\intersect.hpp" />
+    <ClInclude Include="Include\glm\gtx\int_10_10_10_2.hpp" />
+    <ClInclude Include="Include\glm\gtx\io.hpp" />
+    <ClInclude Include="Include\glm\gtx\log_base.hpp" />
+    <ClInclude Include="Include\glm\gtx\matrix_cross_product.hpp" />
+    <ClInclude Include="Include\glm\gtx\matrix_interpolation.hpp" />
+    <ClInclude Include="Include\glm\gtx\matrix_major_storage.hpp" />
+    <ClInclude Include="Include\glm\gtx\matrix_operation.hpp" />
+    <ClInclude Include="Include\glm\gtx\matrix_query.hpp" />
+    <ClInclude Include="Include\glm\gtx\matrix_transform_2d.hpp" />
+    <ClInclude Include="Include\glm\gtx\mixed_product.hpp" />
+    <ClInclude Include="Include\glm\gtx\multiple.hpp" />
+    <ClInclude Include="Include\glm\gtx\noise.hpp" />
+    <ClInclude Include="Include\glm\gtx\norm.hpp" />
+    <ClInclude Include="Include\glm\gtx\normal.hpp" />
+    <ClInclude Include="Include\glm\gtx\normalize_dot.hpp" />
+    <ClInclude Include="Include\glm\gtx\number_precision.hpp" />
+    <ClInclude Include="Include\glm\gtx\optimum_pow.hpp" />
+    <ClInclude Include="Include\glm\gtx\orthonormalize.hpp" />
+    <ClInclude Include="Include\glm\gtx\perpendicular.hpp" />
+    <ClInclude Include="Include\glm\gtx\polar_coordinates.hpp" />
+    <ClInclude Include="Include\glm\gtx\projection.hpp" />
+    <ClInclude Include="Include\glm\gtx\quaternion.hpp" />
+    <ClInclude Include="Include\glm\gtx\random.hpp" />
+    <ClInclude Include="Include\glm\gtx\raw_data.hpp" />
+    <ClInclude Include="Include\glm\gtx\reciprocal.hpp" />
+    <ClInclude Include="Include\glm\gtx\rotate_normalized_axis.hpp" />
+    <ClInclude Include="Include\glm\gtx\rotate_vector.hpp" />
+    <ClInclude Include="Include\glm\gtx\scalar_relational.hpp" />
+    <ClInclude Include="Include\glm\gtx\simd_mat4.hpp" />
+    <ClInclude Include="Include\glm\gtx\simd_quat.hpp" />
+    <ClInclude Include="Include\glm\gtx\simd_vec4.hpp" />
+    <ClInclude Include="Include\glm\gtx\spline.hpp" />
+    <ClInclude Include="Include\glm\gtx\std_based_type.hpp" />
+    <ClInclude Include="Include\glm\gtx\string_cast.hpp" />
+    <ClInclude Include="Include\glm\gtx\transform.hpp" />
+    <ClInclude Include="Include\glm\gtx\transform2.hpp" />
+    <ClInclude Include="Include\glm\gtx\ulp.hpp" />
+    <ClInclude Include="Include\glm\gtx\unsigned_int.hpp" />
+    <ClInclude Include="Include\glm\gtx\vec1.hpp" />
+    <ClInclude Include="Include\glm\gtx\vector_angle.hpp" />
+    <ClInclude Include="Include\glm\gtx\vector_query.hpp" />
+    <ClInclude Include="Include\glm\gtx\wrap.hpp" />
+    <ClInclude Include="Include\glm\integer.hpp" />
+    <ClInclude Include="Include\glm\mat2x2.hpp" />
+    <ClInclude Include="Include\glm\mat2x3.hpp" />
+    <ClInclude Include="Include\glm\mat2x4.hpp" />
+    <ClInclude Include="Include\glm\mat3x2.hpp" />
+    <ClInclude Include="Include\glm\mat3x3.hpp" />
+    <ClInclude Include="Include\glm\mat3x4.hpp" />
+    <ClInclude Include="Include\glm\mat4x2.hpp" />
+    <ClInclude Include="Include\glm\mat4x3.hpp" />
+    <ClInclude Include="Include\glm\mat4x4.hpp" />
+    <ClInclude Include="Include\glm\matrix.hpp" />
+    <ClInclude Include="Include\glm\packing.hpp" />
+    <ClInclude Include="Include\glm\trigonometric.hpp" />
+    <ClInclude Include="Include\glm\vec2.hpp" />
+    <ClInclude Include="Include\glm\vec3.hpp" />
+    <ClInclude Include="Include\glm\vec4.hpp" />
+    <ClInclude Include="Include\glm\vector_relational.hpp" />
+    <ClInclude Include="Include\KHR\khrplatform.h" />
+    <ClInclude Include="Include\shader.h" />
+    <ClInclude Include="Include\stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets" Condition="Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" />
+    <Import Project="..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets" Condition="Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
+  </Target>
 </Project>

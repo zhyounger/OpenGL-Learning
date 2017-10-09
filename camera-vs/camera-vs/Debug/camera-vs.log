@@ -1,0 +1,14 @@
+﻿  main.cpp
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\include\camera.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(168): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(237): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(238): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(242): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(243): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(245): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(246): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\code\opengl\opengl-learning\camera-vs\camera-vs\main.cpp(253): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  camera-vs.vcxproj -> D:\Code\OpenGL\OpenGL-Learning\camera-vs\Debug\camera-vs.exe
+  camera-vs.vcxproj -> D:\Code\OpenGL\OpenGL-Learning\camera-vs\Debug\camera-vs.pdb (Full PDB)
