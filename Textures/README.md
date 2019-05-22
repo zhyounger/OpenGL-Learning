@@ -3,7 +3,7 @@
 在这份代码中我使用了下面这张纹理图片：
 
 
-![texture](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/Textures/src/wall.jpg)
+![texture](https://github.com/zhyounger/OpenGL-Learning/blob/master/Textures/src/wall.jpg)
 
 ## 纹理坐标：
 
@@ -93,7 +93,7 @@ char *texturePath = "../src/wall.jpg";		// 这里填写你的图片路径
 unsigned char *data = stbi_load(texturePath, &width, &height, &nrChannels, 0);		// stbi_load函数首先接受一个图像文件的位置作为输入。接下来它需要三个int作为它的第二、第三和第四个参数，stb_image.h将会用图像的宽度、高度和颜色通道的个数填充这三个变量。我们之后生成纹理的时候会用到的图像的宽度和高度的。
 ```
 
-在这里使用到了[stb_image.h](https://github.com/Orient-ZY/OpenGL-Learning/blob/master/Textures/include/stb_image.h)
+在这里使用到了[stb_image.h](https://github.com/zhyounger/OpenGL-Learning/blob/master/Textures/include/stb_image.h)
 
 在使用`stb_image.h`之前，需要创建一个`stb_image.cpp`文件，并添加如下内容：
 通过定义`STB_IMAGE_IMPLEMENTATION`，预处理器会修改头文件，让其只包含相关的函数定义源码。使用时只需要在程序中包含`stb_image.h`文件就可以了。
@@ -163,6 +163,6 @@ while (!glfwWindowShouldClose(window))
 }
 ```
 
-你可以在[这里](https://github.com/Orient-ZY/OpenGL-Learning/tree/master/Textures)找到源码，最后渲染出的三角形与矩形（只需要将注释中三角形与矩形的代码互换即可）效果如下：
-![triangle_texture](http://git.oschina.net/orient01/OpenGL-img/raw/master/triangleTexture.png)
-![rectangle_texture](http://git.oschina.net/orient01/OpenGL-img/raw/master/rectangleTexture.png)
+你可以在[这里](https://github.com/zhyounger/OpenGL-Learning/tree/master/Textures)找到源码，最后渲染出的三角形与矩形（只需要将注释中三角形与矩形的代码互换即可）效果如下：
+![triangle_texture](https://gitee.com/zhyounger/OpenGL-img/raw/master/triangleTexture.png)
+![rectangle_texture](https://gitee.com/zhyounger/OpenGL-img/raw/master/rectangleTexture.png)
